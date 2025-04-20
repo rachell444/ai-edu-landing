@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-lg rounded-xl border border-white/20;
+  }
+
+  .hover-card {
+    @apply transition-all duration-300 hover:bg-white/20 hover:scale-105;
+  }
+}
